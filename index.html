@@ -2,247 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Yeeun Lee | Materials Science & Engineering</title>
-
+    <title>Welcome to Yeeun's Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">
-                Yeeun Lee
-            </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
+        <header class="topnav">
+            <div class="logo">Yeeun Lee</div>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#research">Research</a>
-                <a href="#publications">Publications</a>
                 <a href="#contact">Contact</a>
-            </div>
-        </nav>
-        <!-- Hero Section -->
+            </nav>
+        </header>
+ 
         <section class="hero" id="home">
             <div class="hero-text">
-                <p class="eyebrow">
-                    WELCOME TO MY ACADEMIC WEBSITE
-                </p>
-                <h1>
-                    Yeeun Lee
-                </h1>
-                <h2>
-                    Materials Science and Engineering
-                </h2>
-                <p class="hero-description">
+                <p class="eyebrow">WELCOME TO MY ACADEMIC WEBSITE</p>
+                <h1>Yeeun Lee</h1>
+                <h2>Materials Science and Engineering</h2>
+                <p class="hero-desc">
                     Exploring energy materials for a more sustainable future
-                    through experiments, molecular simulation, and
-                    operando characterization.
+                    through experiments, simulations, and data-driven insights.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#research" class="button primary">
-                        View My Research
-                    </a>
-                    <a href="#about" class="button secondary">
-                        About Me
-                    </a>
+                    <a href="#about" class="btn btn-primary">Learn More &rarr;</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
-            <!-- Decorative Hero Visual -->
-            <div class="hero-visual">
-                <div class="visual-circle">
-                    <div class="orb orb-one"></div>
-                    <div class="orb orb-two"></div>
-                    <div class="visual-text">
-                        <span>ENERGY</span>
-                        <strong>MATERIALS</strong>
-                    </div>
-                </div>
+            <div class="hero-photo">
+                <!-- profile.jpg 자리에 본인 사진 파일을 index.html과 같은 폴더에 넣고
+                     파일명을 아래 src 값과 맞춰주세요 (예: profile.jpg, profile.png 등) -->
+                <img src="profile.jpg" alt="Yeeun Lee">
             </div>
         </section>
-        <!-- About -->
-        <section class="content-section" id="about">
-            <div class="section-number">
-                01
-            </div>
-            <div class="section-content">
-                <p class="section-label">
-                    ABOUT ME
-                </p>
-                <h3>
-                    Understanding materials
-                    from structure to performance.
-                </h3>
+ 
+        <main class="container">
+            <section class="section-card" id="about">
+                <h3>About Me</h3>
                 <p>
-                    I am interested in understanding how structure,
-                    molecular dynamics, and interfaces govern the
-                    performance of energy materials.
+                    I am interested in understanding how structure, molecular dynamics,
+                    and interfaces govern the performance of energy materials.
+                    My research focuses on battery materials, polymer electrolytes,
+                    operando characterization, and molecular simulation.
                 </p>
-                <p>
-                    My research focuses on battery materials,
-                    polymer electrolytes, operando characterization,
-                    and molecular simulation.
-                </p>
-            </div>
-            <div class="quote-card">
-                <span>Research Vision</span>
-                <p>
-                    Connecting molecular-level understanding
-                    with real electrochemical performance.
-                </p>
-            </div>
-        </section>
-        <!-- Research -->
-        <section class="research-section" id="research">
-            <div class="section-number">
-                02
-            </div>
-            <div class="research-header">
-                <p class="section-label">
-                    RESEARCH
-                </p>
-                <h3>
-                    Research Interests
-                </h3>
-                <p>
-                    My research interests span experimental characterization,
-                    electrochemical energy storage, and molecular simulation.
-                </p>
-            </div>
-            <div class="research-grid">
-                <div class="research-item">
-                    <div class="research-icon">
-                        PE
-                    </div>
-                    <h4>
-                        Polymer Electrolytes
-                    </h4>
-                    <p>
-                        Structure–transport relationships in polymer-based
-                        electrolytes.
-                    </p>
-                </div>
-                <div class="research-item">
-                    <div class="research-icon">
-                        Li
-                    </div>
-                    <h4>
-                        Lithium Batteries
-                    </h4>
-                    <p>
-                        Materials and interfaces for advanced
-                        electrochemical energy storage.
-                    </p>
-                </div>
-                <div class="research-item">
-                    <div class="research-icon">
-                        OP
-                    </div>
-                    <h4>
-                        Operando Characterization
-                    </h4>
-                    <p>
-                        Understanding materials under realistic
-                        battery operating conditions.
-                    </p>
-                </div>
-                <div class="research-item">
-
-                    <div class="research-icon">
-                        Ra
-                    </div>
-                    <h4>
-                        Raman Spectroscopy
-                    </h4>
-                    <p>
-                        Tracking molecular and structural evolution
-                        during electrochemical processes.
-                    </p>
-                </div>
-                <div class="research-item">
-                    <div class="research-icon">
-                        X
-                    </div>
-                    <h4>
-                        SAXS / WAXS
-                    </h4>
-                    <p>
-                        Probing nanoscale and crystalline structural
-                        evolution in functional materials.
-                    </p>
-                </div>
-                <div class="research-item">
-                    <div class="research-icon">
-                        MD
-                    </div>
-                    <h4>
-                        Molecular Dynamics
-                    </h4>
-                    <p>
-                        Connecting molecular motion with experimentally
-                        observed material behavior.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- Publications Placeholder -->
-        <section class="simple-section" id="publications">
-            <div>
-                <p class="section-label">
-                    PUBLICATIONS
-                </p>
-                <h3>
-                    Selected Work
-                </h3>
-                <p>
-                    Publications and research projects will be added here.
-                </p>
-            </div>
-            <span class="coming-soon">
-                Coming soon
-            </span>
-        </section>
-        <!-- Contact -->
-        <section class="contact-section" id="contact">
-            <p class="section-label">
-                CONTACT
-            </p>
-            <h3>
-                Let's connect.
-            </h3>
-            <p>
-                Feel free to reach out for research discussions,
-                collaborations, or academic opportunities.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:your-email@example.com">
-                    Email
-                </a>
-                <a href="#">
-                    LinkedIn
-                </a>
-                <a href="#">
-                    Google Scholar
-                </a>
-                <a href="#">
-                    GitHub
-                </a>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <span>
-                © 2026 Yeeun Lee
-            </span>
-            <span>
-                Materials Science & Engineering
-            </span>
-        </footer>
+            </section>
+ 
+            <section class="section-card" id="research">
+                <h3>Research Interests</h3>
+ 
+                <ul class="tag-list">
+                    <li class="tag">Polymer Electrolytes</li>
+                    <li class="tag">Lithium Batteries</li>
+                    <li class="tag">Operando Characterization</li>
+                    <li class="tag">Raman Spectroscopy</li>
+                    <li class="tag">SAXS / WAXS</li>
+                    <li class="tag">Molecular Dynamics</li>
+                    <li class="tag">Machine Learning</li>
+                </ul>
+            </section>
+ 
+            <footer class="footer" id="contact">
+                <p>© 2026 Yeeun Lee</p>
+            </footer>
+        </main>
     </div>
-</body>
-/html>
-                </div>
-
 </body>
 </html>
