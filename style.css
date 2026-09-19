@@ -63,7 +63,7 @@ strong {
 
 .nav-wrap {
   width: calc(100% - 40px);
-  max-width: 900px;
+  max-width: 1000px;
   min-height: 58px;
 
   margin: 0 auto;
@@ -111,7 +111,7 @@ strong {
 
 .page-shell {
   width: calc(100% - 40px);
-  max-width: 900px;
+  max-width: 1000px;
 
   margin: 0 auto;
 }
@@ -123,8 +123,8 @@ strong {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 205px;
-  gap: 46px;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 42px;
   align-items: center;
 
   padding: 58px 0 48px;
@@ -150,6 +150,10 @@ strong {
 
 .intro-text > p:not(.intro-role) {
   margin-bottom: 12px;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .profile-links {
@@ -168,8 +172,8 @@ strong {
 }
 
 .intro-photo {
-  width: 205px;
-  height: 205px;
+  width: 270px;
+  height: 270px;
 
   overflow: hidden;
 
@@ -541,7 +545,7 @@ strong {
 
 .footer {
   width: calc(100% - 40px);
-  max-width: 900px;
+  max-width: 1000px;
 
   margin: 0 auto;
 
@@ -576,15 +580,15 @@ strong {
   }
 
   .intro {
-    grid-template-columns: minmax(0, 1fr) 165px;
-    gap: 28px;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 30px;
 
     padding-top: 42px;
   }
 
   .intro-photo {
-    width: 165px;
-    height: 165px;
+    width: 220px;
+    height: 220px;
   }
 
   .research-entry {
@@ -648,8 +652,8 @@ strong {
   .intro-photo {
     order: 1;
 
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
 
   .intro h1 {
@@ -702,5 +706,3 @@ strong {
   .section h2 {
     font-size: 22px;
   }
-
-}
