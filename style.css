@@ -125,7 +125,8 @@ strong {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 270px;
   gap: 42px;
-  align-items: center;
+
+  align-items: start;
 
   padding: 58px 0 48px;
 }
@@ -173,7 +174,9 @@ strong {
 
 .intro-photo {
   width: 270px;
-  height: 300px;
+  height: 370px;
+
+  margin-top: 34px;
 
   overflow: hidden;
 
