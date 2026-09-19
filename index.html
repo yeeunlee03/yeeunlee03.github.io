@@ -1,430 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <title>Yeeun Lee | Materials Science & Engineering</title>
- 
-    <link rel="stylesheet" href="style.css">
- 
-    <!-- 아이콘 -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yeeun Lee | Materials Science & Engineering</title>
+  <meta
+    name="description"
+    content="Yeeun Lee — materials science, battery electrolytes, operando characterization, and molecular simulation."
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
- 
- 
+
 <body>
- 
-    <!-- =========================
-         Navigation
-    ========================== -->
-    <nav class="navbar">
- 
-        <div class="nav-container">
- 
-            <a href="#home" class="logo">
-                Yeeun Lee
-            </a>
- 
-            <button class="menu-toggle" id="menuToggle">
-                ☰
-            </button>
- 
-            <div class="nav-links" id="navLinks">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#research">Research</a>
-                <a href="#publications">Publications</a>
-                <a href="#contact">Contact</a>
-            </div>
- 
-        </div>
- 
-    </nav>
- 
- 
- 
-    <!-- =========================
-         Hero
-    ========================== -->
-    <section class="hero" id="home">
- 
-        <div class="hero-container">
- 
-            <!-- 왼쪽 텍스트 -->
-            <div class="hero-text">
- 
-                <p class="eyebrow">
-                    WELCOME TO MY ACADEMIC WEBSITE
-                </p>
- 
-                <h1>
-                    Yeeun Lee
-                </h1>
- 
-                <h2>
-                    Materials Science and Engineering
-                </h2>
- 
-                <p class="hero-description">
-                    Exploring energy materials for a more sustainable future
-                    through experiments, simulations, and data-driven insights.
-                </p>
- 
-                <div class="hero-buttons">
- 
-                    <a href="#about" class="button button-primary">
-                        Learn More
-                        <span>→</span>
-                    </a>
- 
-                    <a href="#contact" class="button button-secondary">
-                        Contact Me
-                    </a>
- 
-                </div>
- 
-            </div>
- 
- 
-<!-- 오른쪽 프로필 사진 -->
-<div class="hero-image-area">
 
-    <div class="photo-background"></div>
+  <!-- =========================
+       Navigation
+  ========================== -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="site-name" href="#home">Yeeun Lee</a>
 
-    <div class="hero-photo">
-        <img src="yeeun.jpeg?v=18" alt="Yeeun Lee">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-</div>
 
-</div> <!-- hero-container 닫기 -->
+  <main class="page-shell">
 
-</section>
- 
- 
     <!-- =========================
-         Main Content
+         Intro
     ========================== -->
-    <main class="main-container">
- 
- 
-        <!-- About Me -->
-        <section class="about-section" id="about">
- 
-            <div class="about-text">
- 
-                <div class="section-number">
-                    <span>01</span>
-                    <div class="line"></div>
-                </div>
- 
-                <h3>
-                    About Me
-                </h3>
- 
-                <p>
-                    I am interested in understanding how structure,
-                    molecular dynamics, and interfaces govern the performance
-                    of energy materials.
-                </p>
- 
-                <p>
-                    My research focuses on battery materials,
-                    polymer electrolytes, operando characterization,
-                    and molecular simulation, with the goal of designing
-                    better materials for a cleaner and more sustainable future.
-                </p>
- 
-                <a href="#research" class="read-more">
-                    Read More →
-                </a>
- 
-            </div>
- 
- 
-            <!-- About 이미지 -->
-            <div class="about-image">
- 
-                <img
-                    src="images/about.jpg"
-                    alt="Energy materials research">
- 
-            </div>
- 
-        </section>
- 
- 
- 
-        <!-- Research Interests -->
-        <section class="research-section" id="research">
- 
-            <div class="section-number">
-                <span>02</span>
-                <div class="line"></div>
-            </div>
- 
-            <h3>
-                Research Interests
-            </h3>
- 
- 
-            <div class="research-grid">
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="network"></i>
-                    </div>
- 
-                    <p>
-                        Polymer<br>
-                        Electrolytes
-                    </p>
- 
-                </div>
- 
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="battery-charging"></i>
-                    </div>
- 
-                    <p>
-                        Lithium<br>
-                        Batteries
-                    </p>
- 
-                </div>
- 
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="search"></i>
-                    </div>
- 
-                    <p>
-                        Operando<br>
-                        Characterization
-                    </p>
- 
-                </div>
- 
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="activity"></i>
-                    </div>
- 
-                    <p>
-                        Raman<br>
-                        Spectroscopy
-                    </p>
- 
-                </div>
- 
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="hexagon"></i>
-                    </div>
- 
-                    <p>
-                        SAXS / WAXS
-                    </p>
- 
-                </div>
- 
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="orbit"></i>
-                    </div>
- 
-                    <p>
-                        Molecular<br>
-                        Dynamics
-                    </p>
- 
-                </div>
- 
- 
- 
-                <div class="research-item">
- 
-                    <div class="icon-circle">
-                        <i data-lucide="cpu"></i>
-                    </div>
- 
-                    <p>
-                        Machine<br>
-                        Learning
-                    </p>
- 
-                </div>
- 
- 
-            </div>
- 
-        </section>
- 
- 
- 
-        <!-- Publications Placeholder -->
-        <section class="simple-section" id="publications">
- 
-            <div class="section-number">
-                <span>03</span>
-                <div class="line"></div>
-            </div>
- 
-            <h3>
-                Publications
-            </h3>
- 
-            <p class="coming-soon">
-                Selected publications will be added here.
-            </p>
- 
-        </section>
- 
- 
- 
-        <!-- Contact -->
-        <section class="simple-section" id="contact">
- 
-            <div class="section-number">
-                <span>04</span>
-                <div class="line"></div>
-            </div>
- 
-            <h3>
-                Contact
-            </h3>
- 
-            <p class="contact-text">
-                Feel free to reach out for research discussions,
-                collaborations, or academic opportunities.
-            </p>
- 
- 
-            <div class="contact-links">
- 
-                <a href="mailto:YOUR_EMAIL@gmail.com">
-                    <i data-lucide="mail"></i>
-                    Email
-                </a>
- 
-                <a
-                    href="https://www.linkedin.com/"
-                    target="_blank">
- 
-                    <i data-lucide="linkedin"></i>
-                    LinkedIn
- 
-                </a>
- 
-                <a
-                    href="https://github.com/"
-                    target="_blank">
- 
-                    <i data-lucide="github"></i>
-                    GitHub
- 
-                </a>
- 
-            </div>
- 
-        </section>
- 
- 
-    </main>
- 
- 
- 
-    <!-- =========================
-         Footer
-    ========================== -->
-    <footer class="footer">
- 
-        <div class="footer-container">
- 
-            <p>
-                © 2026 Yeeun Lee. All rights reserved.
-            </p>
- 
- 
-            <div class="footer-icons">
- 
-                <a href="https://github.com/" target="_blank">
-                    <i data-lucide="github"></i>
-                </a>
- 
-                <a href="https://linkedin.com/" target="_blank">
-                    <i data-lucide="linkedin"></i>
-                </a>
- 
-                <a href="mailto:YOUR_EMAIL@gmail.com">
-                    <i data-lucide="mail"></i>
-                </a>
- 
-            </div>
- 
+    <section class="intro" id="home">
+
+      <div class="intro-text">
+
+        <h1>Yeeun Lee</h1>
+
+        <p class="intro-role">
+          Materials Science &amp; Engineering
+        </p>
+
+        <p>
+          I am interested in understanding how
+          <strong>structure, molecular dynamics, and interfaces</strong>
+          govern the performance of energy materials.
+        </p>
+
+        <p>
+          My current research focuses on
+          <strong>PVDF-HFP polymer electrolytes</strong>,
+          operando characterization, and electrochemical behavior.
+          I use techniques including Raman spectroscopy and SAXS/WAXS
+          to connect structural evolution with battery performance.
+        </p>
+
+        <p>
+          More recently, I have been expanding from experimental materials
+          research toward <strong>machine-learning-driven molecular simulation</strong>,
+          with the goal of connecting experimentally observed behavior
+          to molecular-scale mechanisms and, ultimately, multiscale models.
+        </p>
+
+        <div class="profile-links">
+          <!-- TODO: replace email / CV / LinkedIn URLs with final links -->
+          <a href="mailto:YOUR_EMAIL@gmail.com">Email</a>
+          <span>/</span>
+          <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+          <span>/</span>
+          <a href="https://github.com/yeeunlee03" target="_blank" rel="noopener">GitHub</a>
+          <span>/</span>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
- 
-    </footer>
- 
- 
- 
+
+      </div>
+
+      <div class="intro-photo">
+        <img src="yeeun.jpeg?v=18" alt="Portrait of Yeeun Lee">
+      </div>
+
+    </section>
+
+
     <!-- =========================
-         JavaScript
+         Research
     ========================== -->
-    <script>
- 
-        lucide.createIcons();
- 
- 
-        const menuToggle =
-            document.getElementById("menuToggle");
- 
-        const navLinks =
-            document.getElementById("navLinks");
- 
- 
-        menuToggle.addEventListener("click", () => {
- 
-            navLinks.classList.toggle("show");
- 
-        });
- 
- 
-        document
-            .querySelectorAll(".nav-links a")
-            .forEach(link => {
- 
-                link.addEventListener("click", () => {
- 
-                    navLinks.classList.remove("show");
- 
-                });
- 
-            });
- 
-    </script>
- 
- 
+    <section class="section" id="research">
+
+      <h2>Research</h2>
+
+      <p class="section-intro">
+        My research spans experimental battery materials, operando
+        characterization, and molecular simulation. I am particularly
+        interested in connecting measurements across length and time scales
+        with atomistic models.
+      </p>
+
+
+      <article class="research-entry">
+
+        <div class="research-visual visual-operando" aria-hidden="true">
+          <span>OPERANDO</span>
+          <div class="visual-lines"></div>
+        </div>
+
+        <div class="research-copy">
+          <h3>Operando Structural Evolution of Polymer Electrolytes</h3>
+
+          <p class="research-meta">
+            PVDF-HFP · Raman spectroscopy · SAXS/WAXS · Electrochemistry
+          </p>
+
+          <p>
+            Investigating how polymer-electrolyte structure and interfaces
+            evolve during battery operation, and correlating those changes
+            with electrochemical behavior.
+          </p>
+
+          <p class="entry-links">
+            <a href="#contact">Research discussion</a>
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="research-entry">
+
+        <div class="research-visual visual-md" aria-hidden="true">
+          <span>ML · MD</span>
+          <div class="atom atom-a"></div>
+          <div class="atom atom-b"></div>
+          <div class="atom atom-c"></div>
+          <div class="bond bond-a"></div>
+          <div class="bond bond-b"></div>
+        </div>
+
+        <div class="research-copy">
+          <h3>Machine-Learning-Driven Molecular Simulation</h3>
+
+          <p class="research-meta">
+            MACE · Molecular dynamics · DFT · Atomistic modeling
+          </p>
+
+          <p>
+            Developing computational approaches to interpret material behavior
+            at the molecular scale, with a focus on machine-learning
+            interatomic potentials and molecular dynamics.
+          </p>
+
+          <p class="entry-links">
+            <a href="#contact">Research discussion</a>
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="research-entry">
+
+        <div class="research-visual visual-wo3" aria-hidden="true">
+          <span>WO<sub>3</sub></span>
+          <div class="film-layer layer-1"></div>
+          <div class="film-layer layer-2"></div>
+          <div class="film-layer layer-3"></div>
+        </div>
+
+        <div class="research-copy">
+          <h3>Thin-Film Electrodes for Electrochemical Energy Storage</h3>
+
+          <p class="research-meta">
+            WO<sub>3</sub> · Spray pyrolysis · Raman/XRD/SEM · Electrochemistry
+          </p>
+
+          <p>
+            Studying processing–structure–property relationships in
+            thin-film electrode materials and how synthesis conditions
+            influence electrochemical response.
+          </p>
+
+          <p class="entry-links">
+            <a href="#contact">Research discussion</a>
+          </p>
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- =========================
+         Publications
+    ========================== -->
+    <section class="section" id="publications">
+
+      <h2>Publications &amp; Presentations</h2>
+
+      <div class="text-entry">
+        <p>
+          Selected publications, conference presentations, and research
+          outputs will be added here.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         Experience
+    ========================== -->
+    <section class="section" id="experience">
+
+      <h2>Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-row">
+          <div class="timeline-year">Current</div>
+          <div>
+            <h3>Forschungszentrum Jülich</h3>
+            <p>
+              Polymer electrolytes, operando characterization,
+              electrochemical testing, and molecular simulation.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-year">Previous</div>
+          <div>
+            <h3>Technical University of Munich</h3>
+            <p>
+              Thin-film energy materials and electrochemical characterization.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section class="section contact-section" id="contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        I am always happy to discuss research in battery materials,
+        polymer electrolytes, operando characterization, molecular simulation,
+        and machine-learning-driven materials science.
+      </p>
+
+      <p class="contact-links">
+        <!-- TODO: replace with final contact information -->
+        <a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a>
+        <span>·</span>
+        <a href="https://github.com/yeeunlee03" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>© 2026 Yeeun Lee</p>
+  </footer>
+
 </body>
- 
 </html>
