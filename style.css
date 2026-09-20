@@ -1165,6 +1165,72 @@ strong {
   text-align: left !important;
 }
 
+/* =========================================
+   WO3 DETAIL PAGE - FINAL SPACING
+========================================= */
+
+
+/* 제목 가운데 정렬 */
+.research-detail-header h1 {
+  display: block;
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 auto !important;
+
+  text-align: center !important;
+}
+
+
+/* Back to Research는 왼쪽 유지 */
+.back-to-research {
+  display: inline-block;
+  text-align: left;
+}
+
+
+/* 제목 영역 아래 여백 줄이기 */
+.research-detail-header {
+  padding: 35px 0 15px;
+}
+
+
+/* Figure 아래 여백 거의 제거 */
+.research-detail-figure {
+  margin-bottom: 12px !important;
+}
+
+
+/* Figure와 첫 문단을 더 가깝게 */
+.research-overview-text {
+  width: 100%;
+
+  padding: 0 0 28px !important;
+  margin: 0 !important;
+
+  border: none !important;
+}
+
+
+/* 첫 번째 문단 위 여백 제거 */
+.research-overview-text p:first-child {
+  margin-top: 0 !important;
+}
+
+
+/* 본문 문단 간격 */
+.research-overview-text p {
+  margin-bottom: 14px;
+
+  color: #444444;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 
 /* ===============================
    BOTTOM NAVIGATION
