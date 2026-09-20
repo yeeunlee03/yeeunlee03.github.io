@@ -255,10 +255,10 @@ strong {
 
   overflow: hidden;
 
-  border: 1px solid #e6e6e6;
-  border-radius: 6px;
+  border: none;
+  border-radius: 0;
 
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .research-figure img {
