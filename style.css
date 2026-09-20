@@ -250,8 +250,22 @@ strong {
    RESEARCH FIGURES
 ================================ */
 
+.research-entry {
+  display: grid;
+
+  grid-template-columns:
+    340px
+    minmax(0, 1fr);
+
+  gap: 30px;
+
+  align-items: center;
+
+  padding: 22px 0;
+}
+
 .research-figure {
-  width: 260px;
+  width: 340px;
 
   overflow: hidden;
 
