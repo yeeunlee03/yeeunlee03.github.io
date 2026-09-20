@@ -249,6 +249,29 @@ strong {
   border-top: 1px solid #f3f3f3;
 }
 
+/* Research links */
+
+.research-copy h3 a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.research-copy h3 a:hover {
+  text-decoration: underline;
+}
+
+.research-figure a {
+  display: block;
+}
+
+.research-figure img {
+  transition: opacity 0.18s ease;
+}
+
+.research-figure a:hover img {
+  opacity: 0.88;
+  cursor: pointer;
+}
 
 /* ===============================
    RESEARCH FIGURES
