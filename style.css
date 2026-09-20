@@ -322,17 +322,18 @@ strong {
 }
 
 
-
-
 /* ===============================
    FUTURE DIRECTIONS
 ================================ */
 
 .future-section {
+  width: 100%;
   padding: 10px 0 39px;
 }
 
 .future-card {
+  width: 100%;
+
   padding: 24px 28px;
 
   border: 1px solid #e7eef6;
@@ -372,7 +373,8 @@ strong {
 }
 
 .future-text {
-  max-width: 850px;
+  width: 100%;
+  max-width: none;
 
   color: #333333;
 
@@ -386,7 +388,8 @@ strong {
 ================================ */
 
 .text-entry {
-  max-width: 760px;
+  width: 100%;
+  max-width: none;
 
   color: #555555;
 }
@@ -397,15 +400,22 @@ strong {
 ================================ */
 
 .timeline {
-  max-width: 800px;
+  width: 100%;
+  max-width: none;
 }
 
 .timeline-row {
   display: grid;
-  grid-template-columns: 90px minmax(0, 1fr);
+
+  grid-template-columns:
+    90px
+    minmax(0, 1fr);
+
   gap: 18px;
 
-  padding: 12px 0;
+  width: 100%;
+
+  padding: 14px 0;
 }
 
 .timeline-row + .timeline-row {
@@ -431,11 +441,13 @@ strong {
   color: #555555;
 }
 
+
 /* ===============================
    EXPERIENCE DETAILS
 ================================ */
 
 .experience-content {
+  width: 100%;
   min-width: 0;
 }
 
@@ -443,6 +455,9 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  width: 100%;
+
   gap: 20px;
 
   margin-bottom: 4px;
@@ -464,6 +479,8 @@ strong {
 
   font-size: 13px;
   font-style: italic;
+
+  text-align: right;
 }
 
 .experience-project {
@@ -483,34 +500,19 @@ strong {
 }
 
 
-/* Mobile */
-
-@media (max-width: 600px) {
-
-  .experience-header {
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 2px;
-  }
-
-  .experience-advisor {
-    margin-bottom: 4px;
-  }
-
-}
-
 /* ===============================
    CONTACT
 ================================ */
 
 .contact-section p {
-  max-width: 720px;
+  width: 100%;
+  max-width: none;
 }
 
 .contact-links {
   display: flex;
   flex-wrap: wrap;
+
   gap: 8px;
 
   margin-top: 12px;
@@ -519,6 +521,7 @@ strong {
 .contact-links span {
   color: #bbbbbb;
 }
+
 
 
 /* ===============================
