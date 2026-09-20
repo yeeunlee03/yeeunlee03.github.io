@@ -941,6 +941,30 @@ strong {
   line-height: 1.5;
 }
 
+/* WO3 overview text */
+
+.research-overview-text {
+  width: 100%;
+  padding: 20px 0 34px;
+  border: none;
+}
+
+.research-overview-text p {
+  margin: 0 0 14px;
+
+  color: #444444;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.research-overview-text p:last-child {
+  margin-bottom: 0;
+}
 
 /* ===============================
    CONTENT SECTIONS
