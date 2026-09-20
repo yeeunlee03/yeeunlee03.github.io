@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
   <title>Yeeun Lee | Materials Science & Engineering</title>
   <meta
     name="description"
-    content="Yeeun Lee — materials science, battery electrolytes, operando characterization, and molecular simulation."
-  >
-
-  <link rel="stylesheet" href="style.css">
+    content="Yeeun Lee — Materials Science & Engineering, polymer electrolytes, operando characterization, and machine-learning-driven molecular simulation."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <!-- =========================
-       Navigation
+       Header
   ========================== -->
   <header class="site-header">
-    <div class="nav-wrap">
-      <a class="site-name" href="#home">Yeeun Lee</a>
+    <div class="container nav-container">
+      <a href="#home" class="site-title">Yeeun Lee</a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
+      <nav class="nav">
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
@@ -32,7 +33,10 @@
   </header>
 
 
-  <main class="page-shell">
+  <!-- =========================
+       Main
+  ========================== -->
+  <main class="container">
 
     <!-- =========================
          Intro
@@ -40,32 +44,30 @@
     <section class="intro" id="home">
 
       <div class="intro-text">
-
         <h1>Yeeun Lee</h1>
 
         <p class="intro-role">
           Materials Science &amp; Engineering
         </p>
 
-        <p>
-          I am interested in understanding how
-          <strong>structure, molecular dynamics, and interfaces</strong>
-          govern the performance of energy materials.
+        <p class="intro-affiliation">
+          Technical University of Munich (TUM)
         </p>
 
         <p>
-          My current research focuses on
-          <strong>PVDF-HFP polymer electrolytes</strong>,
-          operando characterization, and electrochemical behavior.
-          I use techniques including Raman spectroscopy and SAXS/WAXS
-          to connect structural evolution with battery performance.
+          I am interested in understanding how structure, molecular dynamics,
+          and interfaces govern the performance of energy materials. My
+          research focuses on polymer electrolytes, operando characterization,
+          and electrochemical behavior. I use techniques including Raman
+          spectroscopy and SAXS/WAXS to connect structural evolution with
+          battery performance.
         </p>
 
         <p>
           More recently, I have been expanding from experimental materials
-          research toward <strong>machine-learning-driven molecular simulation</strong>,
-          with the goal of connecting experimentally observed behavior
-          to molecular-scale mechanisms and, ultimately, multiscale models.
+          research toward machine-learning-driven molecular simulation, with
+          the goal of connecting experimentally observed behavior to
+          molecular-scale mechanisms and, ultimately, multiscale models.
         </p>
 
         <div class="profile-links">
@@ -77,13 +79,14 @@
             href="https://www.linkedin.com/in/yeeun-lee-6222b6360"
             target="_blank"
             rel="noopener"
-          >LinkedIn</a>
+          >
+            LinkedIn
+          </a>
         </div>
-
       </div>
 
       <div class="intro-photo">
-        <img src="yeeun.jpg?v=18" alt="Yeeun Lee">
+        <img src="yeeun.jpeg?v=18" alt="Yeeun Lee" />
       </div>
 
     </section>
@@ -93,106 +96,124 @@
          Research
     ========================== -->
     <section class="section" id="research">
-
       <h2>Research</h2>
 
       <p class="section-intro">
-        My research spans experimental battery materials, operando
-        characterization, and molecular simulation. I am particularly
-        interested in connecting measurements across length and time scales
-        with atomistic models.
+        My research explores how processing, structure, molecular dynamics,
+        and interfaces govern the behavior of electrochemical materials.
+        I have progressively expanded from experimental materials synthesis
+        and characterization to operando analysis and atomistic simulation,
+        with the long-term goal of connecting experimentally observed
+        phenomena with machine-learning-driven molecular and multiscale models.
       </p>
 
-
+      <!-- Research 1 -->
       <article class="research-entry">
+        <div class="research-figure">
+          <img
+            src="images/research-thinfilm.png"
+            alt="Thin-film electrode research overview"
+          />
+        </div>
 
-        <div class="research-visual visual-operando" aria-hidden="true">
-          <span>OPERANDO</span>
-          <div class="visual-lines"></div>
+        <div class="research-copy">
+          <h3>Process–Structure–Property Relationships in Thin-Film Electrodes</h3>
+
+          <p class="research-meta">
+            WO<sub>3</sub> · Spray pyrolysis · Raman · XRD · SEM · Electrochemistry
+          </p>
+
+          <p>
+            I investigated how fabrication conditions influence the structure
+            and electrochemical behavior of WO<sub>3</sub> thin-film electrodes.
+            By combining controlled synthesis with structural, morphological,
+            and electrochemical characterization, I examined how processing
+            parameters translate into changes in material structure and
+            charge-storage behavior.
+          </p>
+        </div>
+      </article>
+
+      <!-- Research 2 -->
+      <article class="research-entry">
+        <div class="research-figure">
+          <img
+            src="images/research-polymer.png"
+            alt="Polymer electrolyte operando research overview"
+          />
         </div>
 
         <div class="research-copy">
           <h3>Operando Structural Evolution of Polymer Electrolytes</h3>
 
           <p class="research-meta">
-            PVDF-HFP · Raman spectroscopy · SAXS/WAXS · Electrochemistry
+            PVDF-HFP · Polymer electrolytes · Raman · SAXS/WAXS · Full-cell electrochemistry
           </p>
 
           <p>
-            Investigating how polymer-electrolyte structure and interfaces
-            evolve during battery operation, and correlating those changes
-            with electrochemical behavior.
-          </p>
-
-          <p class="entry-links">
-            <a href="#contact">Research discussion</a>
+            My current experimental research focuses on PVDF-HFP-based polymer
+            electrolytes and their structural evolution during battery operation.
+            I combine polymer synthesis, electrochemical testing, in-situ Raman
+            spectroscopy, and operando SAXS/WAXS to investigate how molecular
+            and mesoscale structural changes relate to electrochemical performance.
           </p>
         </div>
-
       </article>
 
-
+      <!-- Research 3 -->
       <article class="research-entry">
-
-        <div class="research-visual visual-md" aria-hidden="true">
-          <span>ML · MD</span>
-          <div class="atom atom-a"></div>
-          <div class="atom atom-b"></div>
-          <div class="atom atom-c"></div>
-          <div class="bond bond-a"></div>
-          <div class="bond bond-b"></div>
+        <div class="research-figure">
+          <img
+            src="images/research-mlmd.png"
+            alt="Machine-learning-driven atomistic simulation research overview"
+          />
         </div>
 
         <div class="research-copy">
-          <h3>Machine-Learning Molecular Dynamics for Battery Materials</h3>
+          <h3>Machine-Learning-Driven Atomistic Simulation</h3>
 
           <p class="research-meta">
-            MACE · Molecular dynamics · DFT · Atomistic modeling
+            MACE · Molecular dynamics · External electric fields · DFT · Molecular response
           </p>
 
           <p>
-            Developing computational approaches to interpret material behavior
-            at the molecular scale, with a focus on machine-learning
-            interatomic potentials and molecular dynamics.
-          </p>
-
-          <p class="entry-links">
-            <a href="#contact">Research discussion</a>
+            To move beyond phenomenological interpretation of experimental
+            observations, I am developing atomistic simulation approaches using
+            machine-learning interatomic potentials. My current work uses
+            MACE-based molecular dynamics under external electric fields,
+            together with DFT references, to study molecular response and
+            connect microscopic dynamics with experimentally observable behavior.
           </p>
         </div>
-
       </article>
 
-
+      <!-- Research 4 -->
       <article class="research-entry">
-
-        <div class="research-visual visual-wo3" aria-hidden="true">
-          <span>WO<sub>3</sub></span>
-          <div class="film-layer layer-1"></div>
-          <div class="film-layer layer-2"></div>
-          <div class="film-layer layer-3"></div>
+        <div class="research-figure">
+          <img
+            src="images/research-future.png"
+            alt="Future multiscale molecular materials modeling research plan"
+          />
         </div>
 
         <div class="research-copy">
-          <h3>Thin-Film Electrodes for Electrochemical Energy Storage</h3>
+          <h3>Toward Multiscale Molecular Materials Modeling</h3>
 
           <p class="research-meta">
-            WO<sub>3</sub> · Spray pyrolysis · Raman/XRD/SEM · Electrochemistry
+            ML potentials · Molecular materials · Organic crystals · Coarse graining · Multiscale modeling
           </p>
 
           <p>
-            Studying processing–structure–property relationships in
-            thin-film electrode materials and how synthesis conditions
-            influence electrochemical response.
-          </p>
-
-          <p class="entry-links">
-            <a href="#contact">Research discussion</a>
+            Looking forward, I aim to develop machine-learning-driven simulation
+            frameworks that bridge atomistic and mesoscale descriptions of
+            molecular materials. I am particularly interested in long-range
+            interactions and molecular response, finite-temperature structure
+            and dynamics of organic molecular crystals, and ML-based
+            coarse-graining approaches that enable access to longer length
+            and time scales.
           </p>
         </div>
-
       </article>
-
     </section>
 
 
@@ -200,16 +221,13 @@
          Publications
     ========================== -->
     <section class="section" id="publications">
+      <h2>Publications</h2>
 
-      <h2>Publications &amp; Presentations</h2>
-
-      <div class="text-entry">
+      <div class="simple-block">
         <p>
-          Selected publications, conference presentations, and research
-          outputs will be added here.
+          A selected list of publications and presentations will be added here.
         </p>
       </div>
-
     </section>
 
 
@@ -217,69 +235,73 @@
          Experience
     ========================== -->
     <section class="section" id="experience">
-
       <h2>Experience</h2>
 
       <div class="timeline">
-
-        <div class="timeline-row">
-          <div class="timeline-year">Current</div>
-          <div>
+        <div class="timeline-item">
+          <div class="timeline-date">Current</div>
+          <div class="timeline-content">
             <h3>Forschungszentrum Jülich</h3>
             <p>
-              Polymer electrolytes, operando characterization,
-              electrochemical testing, and molecular simulation.
+              Research on PVDF-HFP polymer electrolytes, operando characterization,
+              electrochemical testing, and machine-learning-based molecular simulation.
             </p>
           </div>
         </div>
 
-        <div class="timeline-row">
-          <div class="timeline-year">Previous</div>
-          <div>
-            <h3>Technical University of Munich</h3>
+        <div class="timeline-item">
+          <div class="timeline-date">Previous</div>
+          <div class="timeline-content">
+            <h3>Technical University of Munich (TUM)</h3>
             <p>
-              Thin-film energy materials and electrochemical characterization.
+              Research on WO<sub>3</sub> thin-film electrodes, process–structure–property
+              relationships, and electrochemical characterization.
             </p>
           </div>
         </div>
-
       </div>
-
     </section>
 
 
     <!-- =========================
          Contact
     ========================== -->
-    <section class="section contact-section" id="contact">
-
+    <section class="section" id="contact">
       <h2>Contact</h2>
 
-      <p>
-        I am always happy to discuss research in battery materials,
-        polymer electrolytes, operando characterization, molecular simulation,
-        and machine-learning-driven materials science.
-      </p>
+      <div class="simple-block">
+        <p>
+          Feel free to contact me for research discussions, collaborations,
+          or academic opportunities related to energy materials, polymer
+          electrolytes, operando characterization, and molecular simulation.
+        </p>
 
-      <p class="contact-links">
-        <a href="mailto:yeeun.lee@tum.de">yeeun.lee@tum.de</a>
-        <span>·</span>
-        <a
-          href="https://www.linkedin.com/in/yeeun-lee-6222b6360"
-          target="_blank"
-          rel="noopener"
-        >LinkedIn</a>
-        <span>·</span>
-        <a href="Yeeun_Lee_CV.pdf" target="_blank" rel="noopener">CV</a>
-      </p>
-
+        <p class="contact-links">
+          <a href="mailto:yeeun.lee@tum.de">yeeun.lee@tum.de</a>
+          <span>·</span>
+          <a
+            href="https://www.linkedin.com/in/yeeun-lee-6222b6360"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+          <span>·</span>
+          <a href="Yeeun_Lee_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </p>
+      </div>
     </section>
 
   </main>
 
 
+  <!-- =========================
+       Footer
+  ========================== -->
   <footer class="footer">
-    <p>© 2026 Yeeun Lee</p>
+    <div class="container footer-inner">
+      <p>© 2026 Yeeun Lee</p>
+    </div>
   </footer>
 
 </body>
