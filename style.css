@@ -229,19 +229,54 @@ strong {
 
 .research-entry {
   display: grid;
-  grid-template-columns: 188px minmax(0, 1fr);
-  gap: 25px;
+
+  grid-template-columns:
+    260px
+    minmax(0, 1fr);
+
+  gap: 26px;
+
   align-items: center;
 
-  padding: 17px 0;
+  padding: 20px 0;
 }
 
 .research-entry + .research-entry {
   border-top: 1px solid #f3f3f3;
 }
 
+
+/* ===============================
+   RESEARCH FIGURES
+================================ */
+
+.research-figure {
+  width: 260px;
+
+  overflow: hidden;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+
+  background: #fafafa;
+}
+
+.research-figure img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ===============================
+   RESEARCH TEXT
+================================ */
+
 .research-copy h3 {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 
   color: #1772d0;
 
@@ -251,219 +286,25 @@ strong {
 }
 
 .research-meta {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   color: #777777;
 
   font-size: 13.5px;
+  line-height: 1.45;
 }
 
 .research-copy > p:not(.research-meta):not(.entry-links) {
   color: #333333;
+
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .entry-links {
   margin-top: 8px;
 
   font-size: 13.5px;
-}
-
-
-/* ===============================
-   RESEARCH VISUALS
-================================ */
-
-.research-visual {
-  position: relative;
-
-  width: 188px;
-  height: 116px;
-
-  overflow: hidden;
-
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-
-  background: #f8f8f8;
-}
-
-.research-visual > span {
-  position: absolute;
-  left: 12px;
-  bottom: 9px;
-  z-index: 2;
-
-  color: #555555;
-
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-}
-
-
-/* operando */
-
-.visual-operando {
-  background:
-    linear-gradient(
-      180deg,
-      #fbfbfb 0%,
-      #f4f6f8 100%
-    );
-}
-
-.visual-lines {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  top: 25px;
-
-  height: 54px;
-
-  border-left: 1px solid #bbbbbb;
-  border-bottom: 1px solid #bbbbbb;
-
-  transform: skewY(-4deg);
-}
-
-.visual-lines::before,
-.visual-lines::after {
-  content: "";
-
-  position: absolute;
-  left: 7px;
-  right: 6px;
-
-  height: 1px;
-
-  transform-origin: left center;
-}
-
-.visual-lines::before {
-  top: 33px;
-
-  background: #1772d0;
-
-  transform: rotate(-8deg);
-}
-
-.visual-lines::after {
-  top: 19px;
-
-  background: #888888;
-
-  transform: rotate(5deg);
-}
-
-
-/* MD */
-
-.visual-md {
-  background:
-    radial-gradient(
-      circle at 30% 35%,
-      #ffffff 0,
-      #f7f7f7 52%,
-      #eeeeee 100%
-    );
-}
-
-.atom {
-  position: absolute;
-
-  width: 22px;
-  height: 22px;
-
-  border: 2px solid #777777;
-  border-radius: 50%;
-
-  background: #ffffff;
-
-  z-index: 2;
-}
-
-.atom-a {
-  left: 47px;
-  top: 31px;
-}
-
-.atom-b {
-  left: 102px;
-  top: 55px;
-}
-
-.atom-c {
-  left: 132px;
-  top: 21px;
-}
-
-.bond {
-  position: absolute;
-
-  height: 2px;
-
-  background: #aaaaaa;
-
-  transform-origin: left center;
-
-  z-index: 1;
-}
-
-.bond-a {
-  width: 66px;
-
-  left: 61px;
-  top: 47px;
-
-  transform: rotate(23deg);
-}
-
-.bond-b {
-  width: 46px;
-
-  left: 117px;
-  top: 61px;
-
-  transform: rotate(-48deg);
-}
-
-
-/* WO3 */
-
-.visual-wo3 {
-  background:
-    linear-gradient(
-      180deg,
-      #fafafa 0%,
-      #f1f1f1 100%
-    );
-}
-
-.film-layer {
-  position: absolute;
-  left: 32px;
-
-  width: 120px;
-  height: 12px;
-
-  border: 1px solid #cfcfcf;
-
-  transform: skewX(-18deg);
-}
-
-.layer-1 {
-  top: 28px;
-  background: #ffffff;
-}
-
-.layer-2 {
-  top: 43px;
-  background: #e9edf2;
-}
-
-.layer-3 {
-  top: 58px;
-  background: #dce3ea;
 }
 
 
@@ -592,13 +433,15 @@ strong {
   }
 
   .research-entry {
-    grid-template-columns: 160px minmax(0, 1fr);
+    grid-template-columns:
+      220px
+      minmax(0, 1fr);
+
     gap: 20px;
   }
 
-  .research-visual {
-    width: 160px;
-    height: 105px;
+  .research-figure {
+    width: 220px;
   }
 
 }
@@ -663,15 +506,14 @@ strong {
   .research-entry {
     grid-template-columns: 1fr;
 
-    gap: 13px;
+    gap: 14px;
 
     padding: 20px 0;
   }
 
-  .research-visual {
+  .research-figure {
     width: 100%;
-    max-width: 260px;
-    height: 125px;
+    max-width: 360px;
   }
 
   .timeline-row {
