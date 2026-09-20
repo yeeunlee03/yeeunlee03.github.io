@@ -215,11 +215,15 @@ strong {
 }
 
 .section-intro {
-  max-width: 760px;
+  max-width: 100%;
 
   margin-bottom: 27px;
 
   color: #555555;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 
@@ -313,14 +317,11 @@ strong {
 
   font-size: 15px;
   line-height: 1.6;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
-
-.entry-links {
-  margin-top: 8px;
-
-  font-size: 13.5px;
-}
-
 
 /* ===============================
    FUTURE DIRECTIONS
