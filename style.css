@@ -1363,3 +1363,39 @@ strong {
 
   margin: 0 auto;
 }
+
+
+/* =========================================
+   ML METHODS ICONS
+========================================= */
+
+.method-icon-svg svg {
+  width: 34px;
+  height: 34px;
+
+  fill: none;
+
+  stroke: #1772d0;
+  stroke-width: 3.2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* Validation badge */
+
+.method-icon-svg .validation-circle {
+  fill: #1772d0;
+  stroke: #1772d0;
+}
+
+.method-icon-svg .validation-check {
+  fill: none;
+
+  stroke: #ffffff;
+  stroke-width: 2.8;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
