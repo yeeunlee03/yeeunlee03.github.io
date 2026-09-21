@@ -406,6 +406,91 @@ strong {
   line-height: 1.6;
 }
 
+/* =========================================
+   EDUCATION
+========================================= */
+
+.education-list {
+  width: 100%;
+}
+
+.education-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 30px;
+
+  padding: 17px 0;
+}
+
+.education-entry + .education-entry {
+  border-top: 1px solid #f0f0f0;
+}
+
+.education-main {
+  min-width: 0;
+}
+
+.education-main h3 {
+  margin: 0 0 4px;
+
+  color: #222222;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.education-school {
+  margin: 0;
+
+  color: #444444;
+
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.education-school span {
+  color: #777777;
+}
+
+.education-detail {
+  margin: 5px 0 0;
+
+  color: #777777;
+
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.education-date {
+  flex-shrink: 0;
+
+  color: #777777;
+
+  font-size: 13.5px;
+  line-height: 1.5;
+
+  text-align: right;
+  white-space: nowrap;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .education-entry {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .education-date {
+    text-align: left;
+  }
+
+}
 
 /* ===============================
    PUBLICATIONS & PRESENTATIONS
