@@ -1343,3 +1343,23 @@ strong {
   }
 
 }
+
+/* =========================================
+   PVDF-HFP DETAIL FIGURE ONLY
+========================================= */
+
+.polymer-detail-figure {
+  width: 100%;
+  margin-bottom: 12px !important;
+}
+
+.polymer-detail-figure img {
+  display: block;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  height: auto;
+
+  margin: 0 auto;
+}
