@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Thin-Film Electrodes | Yeeun Lee</title>
+  <title>Machine-Learning Molecular Dynamics | Yeeun Lee</title>
 
   <meta
     name="description"
-    content="Research on process–structure–property relationships in WO3 thin-film electrodes by Yeeun Lee."
+    content="Research on machine-learning molecular dynamics of electric-field-induced vibrational dynamics by Yeeun Lee."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -82,8 +82,8 @@
 
 
       <h1>
-        Process-Structure-Property Relationships
-        in Thin-Film Electrodes
+        Machine-Learning Molecular Dynamics of
+        Electric-Field-Induced Vibrational Dynamics
       </h1>
 
     </section>
@@ -92,17 +92,21 @@
 
     <!-- =========================
          Main Figure
+         Uncomment after adding figure
     ========================== -->
 
-    <section class="research-detail-figure">
+    <!--
 
-    <img
-      src="images/thinfilm-detail.png"
-      alt="WO3 thin-film fabrication, characterization, and electrochemical analysis"
-    >
+    <section class="research-detail-figure mlmd-detail-figure">
 
+      <img
+        src="images/mlmd-detail.png"
+        alt="Machine-learning molecular dynamics and vibrational analysis workflow"
+      >
 
     </section>
+
+    -->
 
 
 
@@ -110,35 +114,36 @@
          Overview
     ========================== -->
 
-<section class="research-overview-text">
+    <section class="research-overview-text">
 
-  <p>
-    This study investigates how spray-pyrolysis processing conditions govern
-    the microstructure and proton-storage behavior of WO<sub>3</sub> thin-film
-    electrodes. Substrate temperature and spray volume were systematically
-    varied during deposition, producing films with thicknesses ranging from
-    approximately 0.9 to 5.2 μm. The resulting films were characterized by
-    SEM, Raman spectroscopy, and XRD, while cyclic voltammetry and
-    electrochemical impedance spectroscopy were used to evaluate proton
-    intercalation/deintercalation and charge-transfer behavior.
-  </p>
+      <p>
+        This study investigates molecular response and vibrational dynamics
+        under external electric fields using machine-learning molecular
+        dynamics. Pretrained MACE machine-learning interatomic potentials
+        were used to generate molecular-dynamics trajectories under multiple
+        electric-field conditions, enabling atomistic tracking of
+        field-induced structural and dynamical responses over time.
+      </p>
 
-  <p>
-    Changes in processing conditions produced pronounced differences in both
-    film structure and electrochemical response. Proton intercalation varied
-    from approximately 85% to 69%, while the charge-transfer resistance during
-    proton insertion increased from approximately 1.9 Ω to 56.9 Ω depending
-    on the deposition condition. By correlating these electrochemical responses
-    with film morphology and structure, deposition conditions promoting
-    reversible proton intercalation/deintercalation and stable electrode
-    performance were identified.
-  </p>
+      <p>
+        The resulting trajectories were analyzed using Python to quantify
+        atomic and molecular motion, time-dependent dipole response,
+        infrared spectra, power spectra, and mode-resolved vibrational
+        energy. Particular attention was given to field-dependent vibrational
+        excitation, anharmonic coupling, and energy redistribution between
+        molecular degrees of freedom.
+      </p>
 
-</section>
+      <p>
+        Machine-learning molecular-dynamics results were compared with
+        density-functional-theory reference calculations and experimentally
+        relevant spectral behavior to evaluate the physical fidelity and
+        applicable range of the MACE potential. This combined workflow
+        provides an atomistic framework for connecting molecular motion,
+        vibrational response, and externally driven material behavior.
+      </p>
 
-</section>
-
-
+    </section>
 
 
 
@@ -146,92 +151,111 @@
          Methods
     ========================== -->
 
-<section class="research-detail-section methods-section">
+    <section class="research-detail-section methods-section">
 
-  <h2>Methods</h2>
+      <h2>Methods</h2>
 
-  <div class="methods-grid">
+      <div class="methods-grid">
 
-    <!-- 1 -->
-    <div class="method-block">
-      <div class="method-icon">🧪</div>
-      <h3>Deposition Methods</h3>
-      <ul>
-        <li>Spray Pyrolysis</li>
-        <li>Electrochemical Deposition</li>
-        <li>RF Sputtering</li>
-        <li>Spin-coating</li>
-        <li>Blade-coating</li>
-        <li>Solution Casting</li>
-      </ul>
-    </div>
 
-    <!-- 2 -->
-    <div class="method-block">
-      <div class="method-icon">🔬</div>
-      <h3>Structural &amp; Microstructural Analysis</h3>
-      <ul>
-        <li>Optical Microscopy (OM)</li>        
-        <li>Scanning Electron Microscopy (SEM)</li>
-        <li>Raman Spectroscopy</li>
-        <li>X-ray Diffraction (XRD)</li>
-        <li>Profilometer</li>
-        <li>TGA/DSC</li>
-        <li>FT-IR</li>   
-      </ul>
-    </div>
+        <!-- 1 -->
+        <div class="method-block">
 
-    <!-- 3 -->
-    <div class="method-block">
-      <div class="method-icon">⚡</div>
-      <h3>Electrochemical Analysis</h3>
-      <ul>
-        <li>Cyclic Voltammetry (CV)</li>
-        <li>Electrochemical Impedance Spectroscopy (EIS)</li>
-      </ul>
-    </div>
+          <div class="method-icon">⚛️</div>
 
-  </div>
+          <h3>Atomistic Simulation</h3>
 
-</section>
+          <ul>
+            <li>MACE Machine-Learning Interatomic Potentials</li>
+            <li>Molecular Dynamics</li>
+            <li>External Electric Fields</li>
+            <li>Linux / Slurm HPC Environment</li>
+          </ul>
+
+        </div>
+
+
+        <!-- 2 -->
+        <div class="method-block">
+
+          <div class="method-icon">〰️</div>
+
+          <h3>Trajectory &amp; Spectral Analysis</h3>
+
+          <ul>
+            <li>Python-Based Trajectory Analysis</li>
+            <li>Atomic &amp; Molecular Motion</li>
+            <li>Dipole Time-Series Analysis</li>
+            <li>IR Spectrum</li>
+            <li>Power Spectrum</li>
+            <li>Normal-Mode Energy Analysis</li>
+          </ul>
+
+        </div>
+
+
+        <!-- 3 -->
+        <div class="method-block">
+
+          <div class="method-icon">✓</div>
+
+          <h3>Model Validation</h3>
+
+          <ul>
+            <li>Density Functional Theory (DFT)</li>
+            <li>Reference Calculation Comparison</li>
+            <li>Field-Dependent Response Analysis</li>
+            <li>Physical Trend Validation</li>
+          </ul>
+
+        </div>
+
+
+      </div>
+
+    </section>
 
 
 
     <!-- =========================
          Related Work
     ========================== -->
-<section class="research-detail-section related-work-section">
 
-  <div class="related-work-header">
-    <h2>Related Work</h2>
-    <div class="related-work-note">
-      † Co-first author &nbsp;&nbsp;&nbsp; * Corresponding author
-    </div>
-  </div>
+    <section class="research-detail-section related-work-section">
 
-  <div class="related-work-list">
+      <div class="related-work-header">
 
-    <div class="related-work-row">
-      <div class="related-work-type">MANUSCRIPT</div>
-      <div class="related-work-content">
-        <strong>Y. Lee</strong><sup>†</sup>, N. Isaev<sup>†</sup>, J. L. M. Rupp<sup>*</sup>.
-        “Proton Intercalation in WO<sub>3</sub> Thin Films Synthesized by Spray Pyrolysis under Varying Parameters.”
-        <em>In preparation.</em>
+        <h2>Related Work</h2>
+
+        <div class="related-work-note">
+          † Co-first author &nbsp;&nbsp;&nbsp; * Corresponding author
+        </div>
+
       </div>
-    </div>
 
-    <div class="related-work-row">
-      <div class="related-work-type">CONFERENCE</div>
-      <div class="related-work-content">
-        N. Isaev, <strong>Y. Lee</strong>, K. Bohnet, J. L. M. Rupp<sup>*</sup>.
-        “Tunable Proton Intercalation in Tungsten Oxide Thin Films for Proton-Based Energy Storage Devices.”
-        <em>E-MRS 2026 Spring Meeting</em>, Strasbourg, France, May 25–29, 2026.
+
+      <div class="related-work-list">
+
+        <div class="related-work-row">
+
+          <div class="related-work-type">
+            MANUSCRIPT
+          </div>
+
+          <div class="related-work-content">
+            N. Bhatia<sup>†</sup>,
+            <strong>Y. Lee</strong><sup>†</sup>,
+            P. Rinke<sup>*</sup>.
+            “Machine-Learning Molecular Dynamics of
+            Electric-Field-Induced Vibrational Dynamics.”
+            <em>In preparation.</em>
+          </div>
+
+        </div>
+
       </div>
-    </div>
 
-  </div>
-
-</section>
+    </section>
 
 
 
@@ -241,12 +265,12 @@
 
     <div class="research-detail-bottom-nav">
 
-      <a href="index.html#research">
-        ← Back to Research
+      <a href="research-polymer.html">
+        ← Previous: Polymer Electrolytes
       </a>
 
-      <a href="research-polymer.html">
-        Next: Polymer Electrolytes →
+      <a href="index.html#research">
+        Back to Research →
       </a>
 
     </div>
@@ -267,12 +291,6 @@
     </p>
 
   </footer>
-
-
-</body>
-
-</html>
-
 
 
 </body>
