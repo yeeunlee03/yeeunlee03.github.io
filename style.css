@@ -1113,58 +1113,86 @@ strong {
 }
 
 
-/* ===============================
+/* =========================================
    RELATED WORK
-================================ */
+========================================= */
 
-.related-work {
-  width: 100%;
+.related-work-section {
+  padding-top: 34px;
+  padding-bottom: 20px;
 }
 
-.related-work-item {
-  display: grid;
-
-  grid-template-columns:
-    95px
-    minmax(0, 1fr);
-
-  gap: 18px;
-
-  padding: 14px 0;
+.related-work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 18px;
 }
 
-.related-work-item + .related-work-item {
-  border-top: 1px solid #f0f0f0;
+.related-work-header h2 {
+  margin-bottom: 0;
 }
 
-.related-type {
-  color: #888888;
-
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.related-work-item p {
-  color: #444444;
-
+.related-work-note {
+  color: #8a8a8a;
   font-size: 14px;
-  line-height: 1.65;
-
-  text-align: justify;
-  text-justify: inter-word;
+  line-height: 1.4;
+  text-align: right;
+  white-space: nowrap;
 }
 
-.research-author-note {
-  margin-top: 8px !important;
-
-  color: #888888 !important;
-
-  font-size: 11px !important;
-
-  text-align: left !important;
+.related-work-list {
+  border-top: 1px solid #efefef;
 }
 
+.related-work-row {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.related-work-type {
+  color: #8c8c8c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.related-work-content {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.related-work-content strong {
+  font-weight: 700;
+}
+
+.related-work-content em {
+  font-style: italic;
+}
+
+/* tablet / mobile */
+@media (max-width: 760px) {
+  .related-work-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .related-work-note {
+    text-align: left;
+    white-space: normal;
+  }
+
+  .related-work-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 22px 0;
+  }
+}
 /* =========================================
    WO3 DETAIL PAGE - FINAL SPACING
 ========================================= */
