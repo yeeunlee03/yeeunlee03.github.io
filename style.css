@@ -657,6 +657,26 @@ strong {
   color: #555555;
 }
 
+.experience-link {
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.experience-link span {
+  margin-right: 6px;
+}
+
+.experience-link a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.experience-link a:hover {
+  color: #333;
+}
 
 /* ===============================
    EXPERIENCE DETAILS
