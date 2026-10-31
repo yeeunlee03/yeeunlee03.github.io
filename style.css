@@ -1504,3 +1504,66 @@ strong {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+
+/* =========================================
+   POLYMER PAGE — KEY RESULTS
+========================================= */
+
+.results-section h2 {
+  margin-bottom: 22px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px 30px;
+}
+
+.result-card {
+  margin: 0;
+}
+
+.result-card.result-wide {
+  grid-column: 1 / -1;
+}
+
+.result-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.result-card.result-narrow img {
+  max-width: 520px !important;
+}
+
+.result-card.result-wide img {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.result-card figcaption {
+  max-width: 900px;
+  margin: 12px auto 0;
+}
+
+.result-card h3 {
+  margin-bottom: 4px;
+  color: #111111;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.result-card p {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
