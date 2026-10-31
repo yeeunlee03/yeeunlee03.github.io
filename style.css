@@ -1567,3 +1567,20 @@ strong {
     gap: 28px;
   }
 }
+
+
+/* Polymer page: three parts (figure + text) */
+.polymer-part {
+  margin: 0 0 46px;
+}
+
+.polymer-part h2 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.polymer-part .polymer-detail-figure {
+  margin: 0 0 16px !important;
+}
